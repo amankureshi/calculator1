@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(140deg,
+            hsl(240deg 63% 97%) 0%,
+            hsl(212deg 100% 94%) 3%,
+            hsl(198deg 100% 90%) 7%,
+            hsl(189deg 86% 84%) 12%,
+            hsl(173deg 69% 78%) 17%,
+            hsl(151deg 63% 78%) 24%,
+            hsl(100deg 45% 79%) 33%,
+            hsl(56deg 42% 76%) 45%,
+            hsl(33deg 64% 80%) 60%,
+            hsl(17deg 72% 84%) 79%,
+            hsl(0deg 58% 86%) 100%);
+}
+
+::placeholder {
+    color: black;
+}
+
+/*------------ Container  ------------*/
+
+.container {
+    position: relative;
+    max-width: 300px;
+    border-radius: 12px;
+
+    padding: 15px 23px 22px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+/*------------ Row  ------------*/
+.row {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.operator {
+    color: rgb(255, 132, 0);
+}
+
+/*------------ Input display  ------------*/
+
+.display {
+    height: 80px;
+    width: 100%;
+    outline: none;
+    border: none;
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 48px;
+}
+
+/*------------ Button  ------------*/
+
+.row button {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: #eee;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.row button:hover {
+    box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.row button:active {
+    transform: translateY(2px);
+    transition: transform 0.10s ease-in-out;
+}
